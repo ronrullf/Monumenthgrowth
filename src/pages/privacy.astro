@@ -1,16 +1,54 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const lastUpdated = 'July 7, 2026';
 ---
 <Layout
   title="Privacy Policy — Monumenth Growth"
-  description="Privacy policy for Monumenth Growth."
+  description="How Monumenth Growth handles data on this site — in short: we don't collect any."
 >
   <section class="max-w-[720px] mx-auto px-6 md:px-8 py-16 md:py-24">
     <h1>Privacy Policy</h1>
-    <p class="mt-6 text-base leading-relaxed text-muted-foreground">
-      [NEEDS PROOF] This page is a placeholder. Replace with a real privacy policy before
-      publishing — this site collects no form data, but should still disclose any analytics or
-      WhatsApp data handling once finalized.
+    <p class="mt-2 text-sm text-muted-foreground">Last updated: {lastUpdated}</p>
+
+    <p class="mt-8 text-lg leading-relaxed text-foreground">
+      Short version: this site has no forms, no sign-up, and no cookies of its own. The only
+      thing you can do here is open a WhatsApp conversation with us.
+    </p>
+
+    <h2 class="mt-10 text-xl font-semibold text-foreground">What we collect</h2>
+    <p class="mt-3 text-base leading-relaxed text-muted-foreground">
+      Nothing, directly. There is no contact form, no email capture, and no account system on
+      this site — every "Get in touch" button opens WhatsApp with a pre-filled message. We never
+      see your information until you choose to message us there.
+    </p>
+
+    <h2 class="mt-10 text-xl font-semibold text-foreground">Standard hosting logs</h2>
+    <p class="mt-3 text-base leading-relaxed text-muted-foreground">
+      Like virtually any website, our hosting provider automatically logs basic technical
+      information — IP address, browser type, and pages requested — for security and reliability
+      purposes. We don't use this data for advertising, and we don't sell it to anyone.
+    </p>
+
+    <h2 class="mt-10 text-xl font-semibold text-foreground">WhatsApp conversations</h2>
+    <p class="mt-3 text-base leading-relaxed text-muted-foreground">
+      Once you click through to WhatsApp, that conversation is between you and Monumenth Growth,
+      carried over WhatsApp's own infrastructure. It's subject to
+      <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" class="text-foreground underline underline-offset-2">
+        WhatsApp's privacy policy
+      </a>, not just ours. We use the details you share there only to respond to you and, if you
+      become a client, to deliver the service you've asked for.
+    </p>
+
+    <h2 class="mt-10 text-xl font-semibold text-foreground">Cookies and tracking</h2>
+    <p class="mt-3 text-base leading-relaxed text-muted-foreground">
+      This site does not set advertising or analytics cookies. If that changes in the future,
+      we'll update this page and add a consent notice before anything is collected.
+    </p>
+
+    <h2 class="mt-10 text-xl font-semibold text-foreground">Questions</h2>
+    <p class="mt-3 text-base leading-relaxed text-muted-foreground">
+      Message us on WhatsApp using the button on this site and we'll answer directly.
     </p>
   </section>
 </Layout>

@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { MESSAGES } from '../lib/whatsapp';
+---
+<Layout
+  title="Page not found — Monumenth Growth"
+  description="This page doesn't exist, but we're still here."
+>
+  <section class="max-w-[600px] mx-auto px-6 md:px-8 py-24 md:py-32 text-center">
+    <span class="eyebrow text-muted-foreground">404</span>
+    <h1 class="mt-4">This page took a wrong turn.</h1>
+    <p class="mt-6 text-lg leading-relaxed text-muted-foreground">
+      The page you're looking for isn't here. Your next client still is.
+    </p>
+    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <WhatsAppButton message={MESSAGES.default} label="Get in touch" variant="primary" />
+      <a href="/" class="text-foreground font-semibold underline underline-offset-2">
+        Back to homepage
+      </a>
+    </div>
+  </section>
+</Layout>

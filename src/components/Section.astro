@@ -7,8 +7,15 @@ interface Props {
 }
 const { id, tone = 'canvas', ariaLabelledby, class: className = '' } = Astro.props;
 
+// Translucent, not opaque: the fixed .bg-aurora layer behind the page drifts through every
+// section at a different tint. Arbitrary rgba values, not bg-*/NN modifiers — Tailwind can't
+// apply an opacity modifier through a CSS-variable-backed color (see WhatsAppButton/Header fix).
 const toneClass =
-  tone === 'card' ? 'bg-card' : tone === 'charcoal' ? 'bg-primary' : 'bg-background';
+  tone === 'card'
+    ? 'bg-[rgba(244,239,228,0.86)]'
+    : tone === 'charcoal'
+    ? 'bg-[rgba(46,46,46,0.95)]'
+    : 'bg-[rgba(233,228,216,0.88)]';
 ---
 <section
   id={id}

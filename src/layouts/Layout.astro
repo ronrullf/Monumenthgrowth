@@ -2,7 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StickyWhatsApp from '../components/StickyWhatsApp.astro';
-import { MESSAGES } from '../lib/whatsapp';
+import { MESSAGES, WHATSAPP_NUMBER } from '../lib/whatsapp';
 import '../styles/global.css';
 
 interface Props {
@@ -27,6 +27,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#E9E4D8" />
     <link rel="canonical" href={canonicalURL} />
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -50,10 +56,16 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       description:
         'Content and WhatsApp conversion systems for kitchen & bath remodeling contractors.',
       areaServed: 'US',
-      '@graph': undefined,
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'customer service',
+        telephone: `+${WHATSAPP_NUMBER}`,
+        url: `https://wa.me/${WHATSAPP_NUMBER}`,
+      },
     })} />
   </head>
   <body>
+    <div class="bg-aurora" aria-hidden="true"></div>
     <a
       href="#main"
       class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-cta focus:text-white focus:px-4 focus:py-2 focus:rounded"
