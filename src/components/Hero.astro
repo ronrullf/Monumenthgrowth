@@ -16,10 +16,19 @@ import { MESSAGES } from '../lib/whatsapp';
       <p class="mt-6 text-lg leading-relaxed text-foreground max-w-xl">
         You film the job. We turn it into booked leads.
       </p>
-      <p class="mt-4 text-base leading-relaxed text-muted-foreground max-w-xl">
-        Short-form content. A website wired to WhatsApp. Follow-ups that don't let leads go
-        cold. Built only for remodelers.
-      </p>
+      <ul class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 max-w-xl" data-reveal-group>
+        {[
+          'Your footage becomes short-form content.',
+          "Your website's wired to WhatsApp.",
+          'Your follow-ups never go cold.',
+          'Built only for remodelers like you.',
+        ].map((item) => (
+          <li class="reveal flex items-start gap-2.5 text-base leading-snug text-muted-foreground">
+            <span class="mt-2 h-1 w-1 flex-shrink-0 bg-foreground" aria-hidden="true"></span>
+            {item}
+          </li>
+        ))}
+      </ul>
       <div class="mt-8">
         <WhatsAppButton message={MESSAGES.hero} label="Get in touch" variant="primary" />
       </div>

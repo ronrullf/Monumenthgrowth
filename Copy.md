@@ -1,6 +1,6 @@
 # Monumenth Growth — Website Copy & Persuasion Analysis
 
-> **v2 — rewritten short-form.** v1 (effort-asymmetry, longer sentences) is preserved in git history. This version cuts every section to short, direct, 1:1 sentences modeled on the one line that was already working: *"Great at remodeling. Too busy to market it."* Same facts, same numbers, no invented terms repeated more than once.
+> **v3 — fully 1:1.** v1 (effort-asymmetry, longer sentences) and v2 (short-form, but with a few impersonal noun-phrase fragments left over) are preserved in git history. v3 closes the remaining gaps: every fragment now speaks directly to "you" or "we" — no sentence describes the product in the third person. Same facts, same numbers, no invented terms repeated more than once.
 
 ## 1. Strategy Summary
 
@@ -23,13 +23,19 @@
 >
 > **Subhead:** You film the job. We turn it into booked leads.
 >
-> **Body:** Short-form content. A website wired to WhatsApp. Follow-ups that don't let leads go cold. Built only for remodelers.
+> **Body (4-item list, not a paragraph):**
+> - Your footage becomes short-form content.
+> - Your website's wired to WhatsApp.
+> - Your follow-ups never go cold.
+> - Built only for remodelers like you.
 >
 > **Trust line:** No forms. No email chains. One WhatsApp conversation.
 >
 > **Button:** Get in touch
 
 **Why it works:** Nine-word headline, two fragments — the reader gets the dream outcome and the exact effort cost before the sentence even finishes. The audience qualifier ("kitchen & bath") moved to the eyebrow so the H1 carries only the effort number. "$20K+" was dropped sitewide in favor of "clients / leads / projects" — a dollar figure in the headline read like a hype number; "clients" reads professional and trustworthy instead, without losing the high-ticket implication (already established by "kitchen & bath remodeling"). The subhead dropped "attention layer / conversion layer" entirely — "you film, we turn it into leads" says the same thing in 9 words instead of 28.
+
+**v3 change:** the body was a single paragraph of impersonal noun phrases ("Short-form content. A website wired to WhatsApp...") — accurate, but nobody was being spoken to. Rewritten as four parallel "Your ___" / "Built ... like you" lines, all in second person, and rendered as an actual two-column list (small ink tick marks, not a wall of text) instead of a run-on sentence. Reads faster and looks more considered — the exact ask.
 
 **CTA path:** The button is the first thing offered after the promise lands. No reading required before the reader can act.
 
@@ -59,7 +65,7 @@
 >
 > **Step 1 — Send your raw footage.** 1–2 hours. That's it. We turn your footage into content people actually watch. *(Your attention layer.)*
 >
-> **Step 2 — We build the funnel machine.** A website wired to WhatsApp. Views become leads, not just likes. *(Your conversion layer.)*
+> **Step 2 — We build the funnel machine.** Your website is wired to WhatsApp. Views become your leads, not just likes. *(Your conversion layer.)*
 >
 > **Step 3 — We keep leads warm.** Automated follow-ups chase every lead until they book. You stay on the job site.
 >
@@ -77,7 +83,7 @@
 
 > **Headline:** Built for one sector, not everyone.
 >
-> **Body:** No dentists. No gyms. No generic "small business marketing." Just kitchen & bath remodelers. The content sounds like your trade. The funnel is built around how remodels get booked.
+> **Body:** No dentists. No gyms. No generic "small business marketing." Just kitchen & bath remodelers — like you. We shape content that sounds like your trade, and build a funnel around how you actually book jobs.
 >
 > **[NEEDS PROOF] Results block:** _Insert real numbers here — e.g. jobs booked, views generated, lead volume, or a named client and their outcome. Do not publish this section with placeholder figures._
 >
@@ -99,15 +105,15 @@
 >
 > **What you get:**
 > - A **content engine** — your footage becomes short-form content.
-> - A **funnel machine** — website + WhatsApp. Views become leads.
-> - **Automated follow-ups** — every lead, chased until they book.
+> - A **funnel machine** — your website + WhatsApp. Views become leads.
+> - **Automated follow-ups** — we chase every lead until they book.
 > - Built by remodeling specialists. Your time cost: 1–2 hours a month.
 >
 > **[NEEDS PROOF] Pricing / guarantee:** _Confirm the package price and any guarantee before publishing. Not defined in the brief._
 >
 > **Button:** Get in touch
 
-**Why it works:** Every bullet cut to ≤10 words. Bundles the three mechanisms into one owned "done-for-you" package so the reader stops comparing parts and starts weighing one decision.
+**Why it works:** Every bullet cut to ≤10 words. Bundles the three mechanisms into one owned "done-for-you" package so the reader stops comparing parts and starts weighing one decision. Bullets 2 and 3 picked up "your" / "we" in v3 — they were the only two deliverables described in the third person ("website + WhatsApp," "every lead, chased") while the other two already spoke directly to the reader.
 
 **CTA path:** With the package defined, "Get in touch" is the only remaining step to obtain it.
 
@@ -127,7 +133,7 @@
 > Yes — if you remodel kitchens and bathrooms. That's who we build for. Get in touch.
 >
 > **How do leads actually reach me?**
-> Through WhatsApp. Automated follow-ups keep every lead warm until they book. Get in touch.
+> Through WhatsApp. We keep every lead warm until they book. Get in touch.
 
 **Why it works:** Every answer is now one short sentence plus the link — down from two-sentence answers with a trailing rhetorical question. Same four friction points removed (time, skill, fit, mechanics), read in half the time.
 
