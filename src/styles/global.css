@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 :root {
-  /* Light theme — CONFIRMED brand tokens */
+  /* Light theme — warm neutrals, monochrome action color. No orange: the CTA role is
+     carried entirely by ink/charcoal against the cream canvas, sharpened, not saturated. */
   --background: #E9E4D8;
   --card: #F4EFE4;
   --foreground: #1E1E1E;
@@ -17,31 +18,35 @@
   --accent: #E6E4D7;
   --border: #D2CBBB;
   --input: #D2CBBB;
-  --ring: #2E2E2E;
-  --cta: #F26A4B;
-  --cta-hover: #E15335;
-  /* Accessible text-only variant of --cta: #F26A4B as literal text color on
-     --background/--card fails WCAG contrast (~2.4-2.6:1) at any size. Buttons keep the
-     confirmed brand hex as a background; this darker, same-hue shade is for text/links only. */
-  --cta-text: #9E442E;
+  --ring: #1E1E1E;
+
+  /* Action color = ink, not orange. --cta stays the semantic name (still "the one color
+     reserved for conversion"); its value is now the same charcoal as --primary. */
+  --cta: #2E2E2E;
+  --cta-hover: #141414;
+  --cta-foreground: #E6E4D7;
   --destructive: #DC2626;
 
-  --whatsapp-green: #25D366;
+  /* WhatsApp glyph renders in ink/cream to match the monochrome system; brand green is
+     dropped so the sticky FAB doesn't reintroduce an off-palette accent. */
+  --whatsapp-ink: #1E1E1E;
 
-  --radius: 0.5rem;
+  --radius: 0.1875rem;      /* 3px — sharp, architectural, not a rounded SaaS pill */
+  --radius-card: 0.25rem;   /* 4px */
   --spacing: 0.25rem;
 
   --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 
-  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.10);
-  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.12);
+  /* Quieter, tighter shadows — luxury relies on hairlines for definition, not soft glow. */
+  --shadow-sm: 0 1px 2px rgba(20, 18, 15, 0.06);
+  --shadow-md: 0 2px 8px rgba(20, 18, 15, 0.08);
+  --shadow-lg: 0 8px 24px rgba(20, 18, 15, 0.10);
 
   letter-spacing: 0.01em;
 }
 
-/* Dark tokens — preserved from user CSS for future use only. Not wired/toggled in v1. [PROPOSED] */
+/* Dark tokens — preserved for future use only. Not wired/toggled in v1. [PROPOSED] */
 .dark {
   --background: #1E1E1E;
   --card: #262624;
@@ -55,8 +60,9 @@
   --border: #3A392F;
   --input: #3A392F;
   --ring: #E6E4D7;
-  --cta: #F26A4B;
-  --cta-hover: #FF8163;
+  --cta: #E6E4D7;
+  --cta-hover: #FFFFFF;
+  --cta-foreground: #1E1E1E;
   --destructive: #DC2626;
 }
 

@@ -9,7 +9,7 @@ export const MESSAGES = {
   default:
     "Hi Monumenth Growth, I'd like to get more booked remodeling jobs. Can we talk?",
   hero:
-    "Hi Monumenth Growth — I want more booked $20K+ remodels from social media. Can we talk?",
+    "Hi Monumenth Growth — I want more booked remodeling projects from social media. Can we talk?",
   problem:
     'Hi Monumenth Growth — my content gets views but no booked jobs. Can you help?',
   howItWorks:

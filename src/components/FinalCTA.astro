@@ -6,38 +6,18 @@ import { MESSAGES } from '../lib/whatsapp';
 <Section id="final-cta" tone="charcoal" ariaLabelledby="final-cta-heading">
   <div class="max-w-[720px] mx-auto text-center reveal">
     <h2 id="final-cta-heading" class="text-primary-foreground">
-      Your next $20K remodel is already on your camera roll.
+      Your next client is already on your camera roll.
     </h2>
-    <p class="mt-6 text-lg leading-relaxed text-primary-foreground/80">
-      Right now that footage is doing nothing. Hand it over, spend 1–2 hours a month, and let the
-      attention layer and conversion layer turn it into booked jobs. One conversation starts it.
+    <p class="mt-6 text-lg leading-relaxed text-primary-foreground">
+      That footage is doing nothing right now. Hand it over. Spend 1–2 hours a month.
+      Get booked jobs instead.
     </p>
     <div class="mt-10 flex justify-center">
       <WhatsAppButton
         message={MESSAGES.finalCta}
         label="Get in touch"
         variant="large"
-        class="cta-pulse"
       />
     </div>
   </div>
 </Section>
-
-<style>
-  .cta-pulse {
-    animation: cta-pulse-once 1.4s var(--ease-out) 600ms 1;
-  }
-  @keyframes cta-pulse-once {
-    0% {
-      box-shadow: 0 0 0 0 rgba(242, 106, 75, 0.5);
-    }
-    100% {
-      box-shadow: 0 0 0 14px rgba(242, 106, 75, 0);
-    }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .cta-pulse {
-      animation: none;
-    }
-  }
-</style>

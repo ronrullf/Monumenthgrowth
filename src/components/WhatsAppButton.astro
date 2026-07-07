@@ -12,16 +12,16 @@ const { message, label, variant = 'primary', iconOnly = false, class: className 
   Astro.props;
 
 const base =
-  'inline-flex items-center justify-center gap-2 rounded font-semibold transition-all duration-[180ms] ease-standard cta-focus min-h-[44px]';
+  'inline-flex items-center justify-center gap-2.5 rounded font-semibold transition-all duration-[180ms] ease-standard cta-focus min-h-[44px]';
 
-// Note: white-on-cta contrast is ~3.03:1 — below the 4.5:1 AA threshold for normal text,
-// but meets the 3:1 threshold for WCAG "large text" (>=18.66px bold). Every cta-variant
-// label is kept at >=19px/600 so it qualifies, rather than darkening the confirmed brand hex.
+// Monochrome system: ink bg + cream text gives ~13:1 contrast, no size workaround needed.
+// "large" is reserved for the charcoal Final CTA band — inverted (cream bg, ink text) so
+// it pops by value against the dark section instead of introducing a second hue.
 const variantClass =
   variant === 'primary'
-    ? 'bg-cta text-white px-6 py-3.5 text-[19px] hover:bg-cta-hover hover:shadow-md active:translate-y-px'
+    ? 'bg-cta text-cta-foreground px-6 py-3.5 text-base hover:bg-cta-hover hover:shadow-md active:translate-y-px'
     : variant === 'large'
-    ? 'bg-cta text-white px-8 py-4 text-[22px] hover:bg-cta-hover hover:shadow-lg active:translate-y-px w-full sm:w-auto'
+    ? 'bg-card text-foreground px-8 py-4 text-lg hover:bg-background hover:shadow-lg active:translate-y-px w-full sm:w-auto'
     : 'bg-transparent border border-primary text-primary px-6 py-3.5 text-base hover:bg-primary hover:text-primary-foreground active:translate-y-px';
 ---
 <a

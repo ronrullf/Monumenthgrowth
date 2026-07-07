@@ -1,9 +1,12 @@
 # Monumenth Growth — Website Copy & Persuasion Analysis
 
+> **v2 — rewritten short-form.** v1 (effort-asymmetry, longer sentences) is preserved in git history. This version cuts every section to short, direct, 1:1 sentences modeled on the one line that was already working: *"Great at remodeling. Too busy to market it."* Same facts, same numbers, no invented terms repeated more than once.
+
 ## 1. Strategy Summary
 
 - **Core promise:** More booked $20K+ kitchen & bath remodels from social media — while you spend just 1–2 hours a month handing over raw footage.
-- **Primary persuasion angle:** *Effort asymmetry.* The reader wants the outcome (booked high-ticket jobs) but has no time for marketing. Every section widens the gap between the size of the result and the size of the effort, then closes that gap with one action: **Get in touch**.
+- **Primary persuasion angle:** *Effort asymmetry*, said in as few words as possible. The reader is a contractor skimming on a phone between job sites, not reading a brochure. Every section states the gap between result and effort in short sentences, then closes it with one action: **Get in touch**.
+- **Voice model:** Two short fragments, contrast structure, direct address ("you"/"we"), no jargon repeated more than once. "Attention layer" and "conversion layer" are introduced once (Hero eyebrow context) and echoed only as three-word tags in How It Works — never re-explained in a long sentence again.
 - **The funnel spine:** Dream outcome (Hero) → name the pain of views that don't pay (Problem) → show the machine that fixes it (How it works) → prove it's real (Proof) → package it (Offer) → clear the last objections (FAQ) → force the decision (Final CTA). Seven sections, one exit: **Get in touch**.
 
 ---
@@ -14,17 +17,21 @@
 
 **Copy:**
 
-> **Headline:** Book more $20K+ kitchen & bath remodels from social media — on 1–2 hours a month.
+> **Eyebrow:** For kitchen & bath remodelers
 >
-> **Subhead:** Monumenth Growth builds your attention layer and your conversion layer, so your raw footage turns into content, content turns into leads, and leads turn into booked jobs.
+> **Headline:** Book more clients. Just 1–2 hours a month.
 >
-> **Body:** You film the work. We do the rest — short-form content, a website wired to WhatsApp, and follow-ups that don't let leads go cold. Built specifically for remodeling contractors.
+> **Subhead:** You film the job. We turn it into booked leads.
+>
+> **Body:** Short-form content. A website wired to WhatsApp. Follow-ups that don't let leads go cold. Built only for remodelers.
+>
+> **Trust line:** No forms. No email chains. One WhatsApp conversation.
 >
 > **Button:** Get in touch
 
-**Why it works:** Leads with the dream outcome and the exact effort cost in the same breath (specificity + effort asymmetry). "$20K+" and "1–2 hours a month" are concrete numbers, not adjectives, so the reader's brain does the ROI math instantly. The subhead installs the two-word vocabulary the whole page reuses ("attention layer," "conversion layer") — consistent terminology that makes the offer feel like a system, not a favor.
+**Why it works:** Nine-word headline, two fragments — the reader gets the dream outcome and the exact effort cost before the sentence even finishes. The audience qualifier ("kitchen & bath") moved to the eyebrow so the H1 carries only the effort number. "$20K+" was dropped sitewide in favor of "clients / leads / projects" — a dollar figure in the headline read like a hype number; "clients" reads professional and trustworthy instead, without losing the high-ticket implication (already established by "kitchen & bath remodeling"). The subhead dropped "attention layer / conversion layer" entirely — "you film, we turn it into leads" says the same thing in 9 words instead of 28.
 
-**CTA path:** The button is the first thing offered after the promise lands. No reading required before the reader can act — the highest-intent visitor converts here.
+**CTA path:** The button is the first thing offered after the promise lands. No reading required before the reader can act.
 
 ---
 
@@ -34,11 +41,11 @@
 
 > **Headline:** Great at remodeling. Too busy to market it.
 >
-> **Body:** You post a job when you remember to. It gets a few views, then nothing. The lead that did message you three weeks ago never got a follow-up. Meanwhile the remodel of your life is sitting on your camera roll, doing zero for your pipeline. The problem was never the work — it's that nobody built the layer between the work and the booked job.
+> **Body:** You post when you remember to. A few views. Then nothing. The lead that messaged three weeks ago? No follow-up. Meanwhile your best work sits on your camera roll — doing nothing for your pipeline. **The problem was never the work. It's that nobody built the layer between the work and the booked job.**
 >
 > **Button:** Get in touch
 
-**Why it works:** Problem agitation through recognizable scenes, not invented statistics — the reader sees their own week described. The last line reframes the pain as a *missing system* (something buyable) rather than a personal failing (something shameful), which lowers resistance and points straight at what Monumenth sells: the layer between the work and the job.
+**Why it works:** This is the anchor line for the whole site's voice — kept verbatim. The body was rewritten to match its cadence: short sentences, one scene per sentence, the punchline isolated on its own line instead of buried after an em-dash in a 58-word paragraph.
 
 **CTA path:** Once the reader agrees "that's me," the button offers the escape from the exact situation just described.
 
@@ -50,15 +57,15 @@
 
 > **Headline:** Three moving parts. You touch one of them.
 >
-> **Step 1 — Send your raw footage.** 1–2 hours a month is your entire job. We turn that footage into short-form content built to get watched. *(Your attention layer.)*
+> **Step 1 — Send your raw footage.** 1–2 hours. That's it. We turn your footage into content people actually watch. *(Your attention layer.)*
 >
-> **Step 2 — We build the funnel machine.** A website wired straight to WhatsApp, engineered to turn views into qualified leads instead of dead-end likes. *(Your conversion layer.)*
+> **Step 2 — We build the funnel machine.** A website wired to WhatsApp. Views become leads, not just likes. *(Your conversion layer.)*
 >
-> **Step 3 — We keep leads warm.** Automated follow-ups stay on every lead until they book — so nothing slips through while you're on a job site.
+> **Step 3 — We keep leads warm.** Automated follow-ups chase every lead until they book. You stay on the job site.
 >
 > **Button:** Get in touch
 
-**Why it works:** Occam's-razor clarity — three labeled steps remove the fear of "this will be complicated." Reinforcing "attention layer" and "conversion layer" here pays off the terminology introduced in the Hero, so the reader now understands the system rather than just hearing a claim. "1–2 hours a month is your entire job" restates the effort asymmetry at the exact moment the reader is evaluating whether it's worth it.
+**Why it works:** Three labeled steps, each now two short sentences instead of one long one. "Attention layer" / "conversion layer" survive only as three-word tags — a helpful recap, not a re-explanation.
 
 **CTA path:** Having shown the machine end-to-end, the button becomes the switch that turns it on.
 
@@ -70,7 +77,7 @@
 
 > **Headline:** Built for one sector, not everyone.
 >
-> **Body:** We don't do dentists, gyms, or general "small business marketing." We build content and conversion machines for home contractors in the remodeling space — kitchen and bath. That focus is why the content sounds like your trade and the funnel is built around how remodels actually get booked.
+> **Body:** No dentists. No gyms. No generic "small business marketing." Just kitchen & bath remodelers. The content sounds like your trade. The funnel is built around how remodels get booked.
 >
 > **[NEEDS PROOF] Results block:** _Insert real numbers here — e.g. jobs booked, views generated, lead volume, or a named client and their outcome. Do not publish this section with placeholder figures._
 >
@@ -78,7 +85,7 @@
 >
 > **Button:** Get in touch
 
-**Why it works:** Niche specificity *is* the proof when hard data isn't available yet — "we don't do dentists or gyms" signals expertise more credibly than a generic testimonial would. It's grounded entirely in the brief's positioning. The [NEEDS PROOF] blocks are flagged, not fabricated, because invented results would violate the no-fabrication rule and expose the client legally.
+**Why it works:** Same claim as v1, half the words — three short negatives, then three short positives, instead of one 46-word sentence saying the same thing three ways.
 
 **CTA path:** Specialization answers "will this work for *my* business?" — and the button lets the now-reassured reader act.
 
@@ -91,16 +98,16 @@
 > **Headline:** Everything between your footage and a booked job — done for you.
 >
 > **What you get:**
-> - A **content engine** that turns your raw footage into short-form content, automatically.
-> - A **funnel machine** — website connected to WhatsApp — that converts views into qualified leads.
-> - **Automated follow-ups** that keep every lead engaged until they book.
-> - Built by specialists in kitchen & bath remodeling. Your time cost: 1–2 hours a month.
+> - A **content engine** — your footage becomes short-form content.
+> - A **funnel machine** — website + WhatsApp. Views become leads.
+> - **Automated follow-ups** — every lead, chased until they book.
+> - Built by remodeling specialists. Your time cost: 1–2 hours a month.
 >
 > **[NEEDS PROOF] Pricing / guarantee:** _Confirm the package price and any guarantee before publishing. Not defined in the brief._
 >
 > **Button:** Get in touch
 
-**Why it works:** Bundles the three mechanisms into one owned "done-for-you" package so the reader stops comparing parts and starts weighing one decision. Restating "1–2 hours a month" beside the full deliverable stack is the strongest effort-asymmetry moment on the page — the reader sees maximum output against minimum input right before the CTA. Pricing and guarantee are flagged because neither exists in the brief.
+**Why it works:** Every bullet cut to ≤10 words. Bundles the three mechanisms into one owned "done-for-you" package so the reader stops comparing parts and starts weighing one decision.
 
 **CTA path:** With the package defined, "Get in touch" is the only remaining step to obtain it.
 
@@ -111,20 +118,20 @@
 **Copy:**
 
 > **How much of my time does this take?**
-> 1–2 hours a month. You send raw footage; we handle content, the funnel, and follow-ups. Questions about your setup? Get in touch.
+> 1–2 hours a month. You send footage. We handle the rest. Get in touch.
 >
 > **Do I need to film professionally?**
-> No. Raw footage from your phone on the job site is the input — turning it into content that gets watched is our job, not yours. Get in touch to see what we'd do with your footage.
+> No. Raw phone footage is all we need. Making it watchable is our job. Get in touch.
 >
 > **Is this built for my kind of business?**
-> If you remodel kitchens and bathrooms, yes — that's specifically who we build for. Get in touch to confirm fit.
+> Yes — if you remodel kitchens and bathrooms. That's who we build for. Get in touch.
 >
 > **How do leads actually reach me?**
-> Through WhatsApp. Your site is wired to it, and automated follow-ups keep each lead warm until they book. Get in touch and we'll walk you through the flow.
+> Through WhatsApp. Automated follow-ups keep every lead warm until they book. Get in touch.
 
-**Why it works:** Each answer removes one friction point (time, skill, fit, mechanics) — the classic objection-handling job of an FAQ. Applying UX-copy discipline, every answer is clear, concise, and closes on the same action, so even a skimming reader is funneled. Answers stay grounded in the brief; nothing is invented.
+**Why it works:** Every answer is now one short sentence plus the link — down from two-sentence answers with a trailing rhetorical question. Same four friction points removed (time, skill, fit, mechanics), read in half the time.
 
-**CTA path:** Every single answer ends by handing the reader to "Get in touch" — the FAQ doubles as four more conversion prompts.
+**CTA path:** Every single answer ends by handing the reader to "Get in touch."
 
 ---
 
@@ -132,15 +139,15 @@
 
 **Copy:**
 
-> **Headline:** Your next $20K remodel is already on your camera roll.
+> **Headline:** Your next client is already on your camera roll.
 >
-> **Body:** Right now that footage is doing nothing. Hand it over, spend 1–2 hours a month, and let the attention layer and conversion layer turn it into booked jobs. One conversation starts it.
+> **Body:** That footage is doing nothing right now. Hand it over. Spend 1–2 hours a month. Get booked jobs instead.
 >
 > **Button:** Get in touch
 
-**Why it works:** Peak-end close — the strongest, most concrete image sits last, so it's what the reader leaves with. "Already on your camera roll" makes the opportunity feel present and wasted, converting inertia into urgency. Every core promise (outcome, effort, mechanism) is compressed into three sentences before the final button.
+**Why it works:** Same peak-end structure as before, with "$20K remodel" swapped for "client" — professional language instead of a dollar-figure hook, while "already on your camera roll" still makes the opportunity feel present and wasted. Body cut from one 31-word comma-chain (with a jargon callback) to three short sentences and no jargon at all.
 
-**CTA path:** This section exists only to convert. "One conversation starts it" reframes the CTA as small and low-risk, then the button delivers it.
+**CTA path:** This section exists only to convert. Short, declarative sentences right before the button reduce hesitation instead of adding a final thing to parse.
 
 ---
 
@@ -158,7 +165,7 @@
 
 **Coverage: 7 of 7 sections (100%)** route to the primary CTA — clears the ≥90% requirement. No section dead-ends. The only non-selling copy is the [NEEDS PROOF] placeholders, which are internal notes, not published body copy.
 
-**Button microcopy note (UX-copy craft):** "Get in touch" is retained as the primary label per spec. If you later want to A/B test, verb-first, outcome-matched variants worth trying: *"Get my content plan," "Start with my footage," "Book a 15-min fit call."* Keep one label sitewide for consistency.
+**Button microcopy note (UX-copy craft):** "Get in touch" is retained as the primary label. If you later want to A/B test, verb-first, outcome-matched variants worth trying: *"Get my content plan," "Start with my footage," "Book a 15-min fit call."* Keep one label sitewide for consistency.
 
 ---
 
