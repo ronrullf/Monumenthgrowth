@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light theme — CONFIRMED brand tokens */
+  --background: #E9E4D8;
+  --card: #F4EFE4;
+  --foreground: #1E1E1E;
+  --primary: #2E2E2E;
+  --primary-foreground: #E6E4D7;
+  --secondary: #D8D2C4;
+  --muted: #CFC8B8;
+  --muted-foreground: #5E5A52;
+  --accent: #E6E4D7;
+  --border: #D2CBBB;
+  --input: #D2CBBB;
+  --ring: #2E2E2E;
+  --cta: #F26A4B;
+  --cta-hover: #E15335;
+  /* Accessible text-only variant of --cta: #F26A4B as literal text color on
+     --background/--card fails WCAG contrast (~2.4-2.6:1) at any size. Buttons keep the
+     confirmed brand hex as a background; this darker, same-hue shade is for text/links only. */
+  --cta-text: #9E442E;
+  --destructive: #DC2626;
+
+  --whatsapp-green: #25D366;
+
+  --radius: 0.5rem;
+  --spacing: 0.25rem;
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.10);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.12);
+
+  letter-spacing: 0.01em;
+}
+
+/* Dark tokens — preserved from user CSS for future use only. Not wired/toggled in v1. [PROPOSED] */
+.dark {
+  --background: #1E1E1E;
+  --card: #262624;
+  --foreground: #E9E4D8;
+  --primary: #E6E4D7;
+  --primary-foreground: #1E1E1E;
+  --secondary: #33322E;
+  --muted: #33322E;
+  --muted-foreground: #A39D8E;
+  --accent: #33322E;
+  --border: #3A392F;
+  --input: #3A392F;
+  --ring: #E6E4D7;
+  --cta: #F26A4B;
+  --cta-hover: #FF8163;
+  --destructive: #DC2626;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  h1, h2 {
+    font-family: 'Playfair Display', ui-serif, Georgia, serif;
+    font-weight: 600;
+    color: var(--foreground);
+  }
+
+  h1 {
+    font-size: 2.375rem; /* 38px mobile */
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+
+  h2 {
+    font-size: 1.875rem; /* 30px mobile */
+    line-height: 1.12;
+    letter-spacing: -0.005em;
+  }
+
+  @media (min-width: 768px) {
+    h1 { font-size: 3.75rem; } /* 60px desktop */
+    h2 { font-size: 2.5rem; } /* 40px desktop */
+  }
+}
+
+.eyebrow {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+@media (min-width: 768px) {
+  .eyebrow { font-size: 0.8125rem; }
+}
+
+/* Focus visibility */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.cta-focus:focus-visible {
+  outline: 2px solid #FFFFFF;
+  box-shadow: 0 0 0 4px var(--ring);
+  outline-offset: 2px;
+}
+
+/* Scroll-reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

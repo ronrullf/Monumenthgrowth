@@ -1,0 +1,20 @@
+---
+// The "two-layer" signature motif: an offset back panel + a front panel,
+// representing raw footage (front) sitting over the funnel/back layer.
+interface Props {
+  elevation?: 'md' | 'lg';
+  class?: string;
+}
+const { elevation = 'md', class: className = '' } = Astro.props;
+const shadow = elevation === 'lg' ? 'shadow-lg' : 'shadow-md';
+---
+<div class:list={['relative', className]}>
+  <div
+    class="absolute inset-0 translate-x-3 translate-y-3 rounded-card bg-muted"
+    aria-hidden="true"
+  >
+  </div>
+  <div class:list={['relative rounded-card bg-card border border-border', shadow]}>
+    <slot />
+  </div>
+</div>

@@ -1,0 +1,100 @@
+---
+import WhatsAppButton from './WhatsAppButton.astro';
+import { MESSAGES } from '../lib/whatsapp';
+
+interface NavLink {
+  label: string;
+  href: string;
+}
+interface Props {
+  navLinks: NavLink[];
+}
+const { navLinks } = Astro.props;
+---
+<header
+  data-header
+  class="sticky top-0 z-40 bg-background/90 backdrop-blur transition-shadow duration-200"
+>
+  <div class="max-w-container mx-auto px-6 md:px-8 flex items-center justify-between h-16 md:h-20">
+    <a href="#hero" class="font-serif text-lg md:text-xl font-semibold text-foreground">
+      Monumenth Growth
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class="text-[15px] text-muted-foreground hover:text-foreground transition-colors duration-150"
+        >
+          {link.label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="hidden lg:block">
+      <WhatsAppButton message={MESSAGES.default} label="Get in touch" variant="primary" />
+    </div>
+
+    <div class="flex items-center gap-3 lg:hidden">
+      <WhatsAppButton
+        message={MESSAGES.default}
+        label="Get in touch"
+        variant="primary"
+        class="!px-4 !py-2.5"
+      />
+      <button
+        type="button"
+        data-mobile-menu-trigger
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Toggle menu"
+        class="flex h-11 w-11 items-center justify-center rounded border border-border"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <nav
+    id="mobile-menu"
+    data-mobile-menu
+    class="lg:hidden hidden flex-col gap-1 border-t border-border bg-background px-6 py-4"
+    aria-label="Mobile"
+  >
+    {navLinks.map((link) => (
+      <a
+        href={link.href}
+        class="py-3 text-base text-foreground border-b border-border last:border-b-0"
+      >
+        {link.label}
+      </a>
+    ))}
+  </nav>
+</header>
+
+<style>
+  [data-header].scrolled {
+    border-bottom: 1px solid var(--border);
+  }
+</style>
+
+<script>
+  const header = document.querySelector('[data-header]');
+  const onScroll = () => {
+    if (!header) return;
+    header.classList.toggle('scrolled', window.scrollY > 8);
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  const trigger = document.querySelector('[data-mobile-menu-trigger]');
+  const menu = document.querySelector('[data-mobile-menu]');
+  trigger?.addEventListener('click', () => {
+    const expanded = trigger.getAttribute('aria-expanded') === 'true';
+    trigger.setAttribute('aria-expanded', String(!expanded));
+    menu?.classList.toggle('hidden');
+    menu?.classList.toggle('flex');
+  });
+</script>

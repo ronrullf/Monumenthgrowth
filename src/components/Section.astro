@@ -1,0 +1,21 @@
+---
+interface Props {
+  id: string;
+  tone?: 'canvas' | 'card' | 'charcoal';
+  ariaLabelledby?: string;
+  class?: string;
+}
+const { id, tone = 'canvas', ariaLabelledby, class: className = '' } = Astro.props;
+
+const toneClass =
+  tone === 'card' ? 'bg-card' : tone === 'charcoal' ? 'bg-primary' : 'bg-background';
+---
+<section
+  id={id}
+  aria-labelledby={ariaLabelledby}
+  class:list={[toneClass, 'py-16 md:py-24', className]}
+>
+  <div class="max-w-container mx-auto px-6 md:px-8">
+    <slot />
+  </div>
+</section>

@@ -1,0 +1,48 @@
+---
+import Section from './Section.astro';
+import Eyebrow from './Eyebrow.astro';
+import FaqItem from './FaqItem.astro';
+import { MESSAGES } from '../lib/whatsapp';
+
+const faqs = [
+  {
+    question: 'How much of my time does this take?',
+    answer:
+      '1–2 hours a month. You send raw footage; we handle content, the funnel, and follow-ups. Questions about your setup?',
+  },
+  {
+    question: 'Do I need to film professionally?',
+    answer:
+      'No. Raw footage from your phone on the job site is the input — turning it into content that gets watched is our job, not yours.',
+  },
+  {
+    question: 'Is this built for my kind of business?',
+    answer:
+      "If you remodel kitchens and bathrooms, yes — that's specifically who we build for.",
+  },
+  {
+    question: 'How do leads actually reach me?',
+    answer:
+      'Through WhatsApp. Your site is wired to it, and automated follow-ups keep each lead warm until they book.',
+  },
+];
+---
+<Section id="faq" tone="canvas" ariaLabelledby="faq-heading">
+  <div class="max-w-[760px] mx-auto">
+    <div class="text-center reveal">
+      <Eyebrow text="FAQ" />
+      <h2 id="faq-heading" class="mt-4">Questions, answered.</h2>
+    </div>
+
+    <div class="mt-10 border-t border-border" data-reveal-group>
+      {faqs.map((faq, i) => (
+        <FaqItem
+          id={String(i)}
+          question={faq.question}
+          answer={faq.answer}
+          waMessage={MESSAGES.faq}
+        />
+      ))}
+    </div>
+  </div>
+</Section>

@@ -1,0 +1,52 @@
+---
+import Section from './Section.astro';
+import Eyebrow from './Eyebrow.astro';
+import StepCard from './StepCard.astro';
+import WhatsAppButton from './WhatsAppButton.astro';
+import { MESSAGES } from '../lib/whatsapp';
+
+const steps = [
+  {
+    number: '01',
+    title: 'Send your raw footage.',
+    body: '1–2 hours a month is your entire job. We turn that footage into short-form content built to get watched.',
+    tag: 'Your attention layer.',
+  },
+  {
+    number: '02',
+    title: 'We build the funnel machine.',
+    body: 'A website wired straight to WhatsApp, engineered to turn views into qualified leads instead of dead-end likes.',
+    tag: 'Your conversion layer.',
+  },
+  {
+    number: '03',
+    title: 'We keep leads warm.',
+    body: "Automated follow-ups stay on every lead until they book — so nothing slips through while you're on a job site.",
+  },
+];
+---
+<Section id="how-it-works" tone="canvas" ariaLabelledby="how-it-works-heading">
+  <div class="text-center max-w-[720px] mx-auto reveal">
+    <Eyebrow text="HOW IT WORKS" />
+    <h2 id="how-it-works-heading" class="mt-4">Three moving parts. You touch one of them.</h2>
+  </div>
+
+  <div class="mt-14 grid gap-10 md:gap-8 lg:grid-cols-3 relative" data-reveal-group>
+    {steps.map((step, i) => (
+      <div class="relative">
+        {i > 0 && (
+          <div
+            class="absolute left-1/2 -top-6 h-6 w-px bg-border lg:hidden"
+            aria-hidden="true"
+          >
+          </div>
+        )}
+        <StepCard number={step.number} title={step.title} body={step.body} tag={step.tag} />
+      </div>
+    ))}
+  </div>
+
+  <div class="mt-14 flex justify-center reveal">
+    <WhatsAppButton message={MESSAGES.howItWorks} label="Get in touch" variant="primary" />
+  </div>
+</Section>

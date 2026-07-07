@@ -1,0 +1,71 @@
+---
+import Section from './Section.astro';
+import Eyebrow from './Eyebrow.astro';
+import LayerPanel from './LayerPanel.astro';
+import WhatsAppButton from './WhatsAppButton.astro';
+import { MESSAGES } from '../lib/whatsapp';
+
+const items = [
+  {
+    text: 'A **content engine** that turns your raw footage into short-form content, automatically.',
+  },
+  {
+    text: 'A **funnel machine** — website connected to WhatsApp — that converts views into qualified leads.',
+  },
+  {
+    text: '**Automated follow-ups** that keep every lead engaged until they book.',
+  },
+  {
+    text: 'Built by specialists in kitchen & bath remodeling. Your time cost: **1–2 hours a month.**',
+  },
+];
+
+function renderBold(text: string) {
+  return text.split(/\*\*(.+?)\*\*/g).map((part, i) =>
+    i % 2 === 1 ? `<strong class="font-semibold text-foreground">${part}</strong>` : part
+  ).join('');
+}
+---
+<Section id="offer" tone="canvas" ariaLabelledby="offer-heading">
+  <div class="text-center max-w-[720px] mx-auto reveal">
+    <Eyebrow text="THE PACKAGE" />
+    <h2 id="offer-heading" class="mt-4">
+      Everything between your footage and a booked job — done for you.
+    </h2>
+  </div>
+
+  <LayerPanel elevation="lg" class="mt-12 max-w-3xl mx-auto reveal">
+    <div class="p-8 md:p-12">
+      <ul class="space-y-4" data-reveal-group>
+        {items.map((item) => (
+          <li class="reveal flex items-start gap-3">
+            <svg
+              class="mt-1 h-5 w-5 flex-shrink-0 text-cta"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.704 5.29a1 1 0 010 1.415l-7.5 7.5a1 1 0 01-1.414 0l-3.5-3.5A1 1 0 015.704 9.29l2.793 2.792 6.793-6.793a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span class="text-base leading-relaxed text-foreground" set:html={renderBold(item.text)} />
+          </li>
+        ))}
+      </ul>
+
+      <div class="mt-8 pt-8 border-t border-border">
+        <span class="eyebrow text-muted-foreground">[NEEDS PROOF] Pricing / guarantee</span>
+        <p class="mt-2 text-sm text-muted-foreground">
+          Package price and any guarantee to be confirmed before publishing.
+        </p>
+      </div>
+
+      <div class="mt-8">
+        <WhatsAppButton message={MESSAGES.offer} label="Get in touch" variant="primary" class="w-full sm:w-auto" />
+      </div>
+    </div>
+  </LayerPanel>
+</Section>

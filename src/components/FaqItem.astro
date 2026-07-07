@@ -1,0 +1,65 @@
+---
+import { waLink } from '../lib/whatsapp';
+
+interface Props {
+  question: string;
+  answer: string;
+  waMessage: string;
+  id: string;
+}
+const { question, answer, waMessage, id } = Astro.props;
+---
+<div data-faq-item class="border-b border-border reveal">
+  <h3>
+    <button
+      type="button"
+      data-faq-trigger
+      aria-expanded="false"
+      aria-controls={`faq-panel-${id}`}
+      class="w-full flex items-center justify-between gap-4 py-6 text-left min-h-[44px]"
+    >
+      <span class="text-lg md:text-xl font-semibold text-foreground">{question}</span>
+      <svg
+        data-faq-chevron
+        class="h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 ease-standard"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </h3>
+  <div
+    id={`faq-panel-${id}`}
+    data-faq-panel
+    role="region"
+    class="overflow-hidden transition-[max-height] duration-200 ease-standard"
+    style="max-height: 0px;"
+  >
+    <p class="pb-6 text-base leading-relaxed text-muted-foreground max-w-[720px]">
+      {answer}{' '}
+      <a href={waLink(waMessage)} target="_blank" rel="noopener noreferrer" class="text-cta-text font-medium underline underline-offset-2 hover:no-underline">
+        Get in touch
+      </a>
+    </p>
+  </div>
+</div>
+
+<style>
+  [data-faq-trigger][aria-expanded='true'] [data-faq-chevron] {
+    transform: rotate(180deg);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    [data-faq-panel] {
+      transition: none;
+    }
+    [data-faq-chevron] {
+      transition: none;
+    }
+  }
+</style>

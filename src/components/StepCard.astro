@@ -1,0 +1,23 @@
+---
+import LayerPanel from './LayerPanel.astro';
+
+interface Props {
+  number: string;
+  title: string;
+  body: string;
+  tag?: string;
+}
+const { number, title, body, tag } = Astro.props;
+---
+<LayerPanel class="reveal h-full">
+  <div class="p-8 flex flex-col h-full">
+    <span class="font-mono text-cta-text text-sm font-medium tracking-eyebrow">{number}</span>
+    <h3 class="mt-4">{title}</h3>
+    <p class="mt-3 text-base leading-relaxed text-muted-foreground flex-1">{body}</p>
+    {tag && (
+      <span class="eyebrow mt-6 inline-block w-fit rounded-full bg-muted px-3 py-1.5">
+        {tag}
+      </span>
+    )}
+  </div>
+</LayerPanel>

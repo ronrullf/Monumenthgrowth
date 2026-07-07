@@ -1,0 +1,47 @@
+---
+import WhatsAppButton from './WhatsAppButton.astro';
+import { MESSAGES } from '../lib/whatsapp';
+
+interface NavLink {
+  label: string;
+  href: string;
+}
+interface Props {
+  navLinks: NavLink[];
+}
+const { navLinks } = Astro.props;
+const year = new Date().getFullYear();
+---
+<footer class="bg-background border-t border-border py-16">
+  <div class="max-w-container mx-auto px-6 md:px-8 grid gap-10 md:grid-cols-3">
+    <div>
+      <p class="font-serif text-lg font-semibold text-foreground">Monumenth Growth</p>
+      <p class="mt-2 text-sm text-muted-foreground max-w-xs">
+        The attention &amp; conversion layer for kitchen &amp; bath remodelers.
+      </p>
+    </div>
+
+    <nav class="flex flex-col gap-2" aria-label="Footer">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
+        >
+          {link.label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="md:justify-self-end">
+      <WhatsAppButton message={MESSAGES.default} label="Get in touch" variant="primary" />
+    </div>
+  </div>
+
+  <div class="max-w-container mx-auto px-6 md:px-8 mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 text-sm text-muted-foreground">
+    <span>&copy; {year} Monumenth Growth</span>
+    <span aria-hidden="true" class="hidden sm:inline">&middot;</span>
+    <a href="/privacy" class="hover:text-foreground transition-colors duration-150">Privacy</a>
+    <span aria-hidden="true" class="hidden sm:inline">&middot;</span>
+    <a href="/terms" class="hover:text-foreground transition-colors duration-150">Terms</a>
+  </div>
+</footer>

@@ -1,0 +1,24 @@
+---
+import Section from './Section.astro';
+import Eyebrow from './Eyebrow.astro';
+import WhatsAppButton from './WhatsAppButton.astro';
+import { MESSAGES } from '../lib/whatsapp';
+---
+<Section id="problem" tone="canvas" ariaLabelledby="problem-heading">
+  <div class="max-w-[720px] mx-auto text-center reveal">
+    <Eyebrow text="THE GAP" />
+    <h2 id="problem-heading" class="mt-4">Great at remodeling. Too busy to market it.</h2>
+    <p class="mt-6 text-lg leading-relaxed text-foreground">
+      You post a job when you remember to. It gets a few views, then nothing. The lead that did
+      message you three weeks ago never got a follow-up. Meanwhile the remodel of your life is
+      sitting on your camera roll, doing zero for your pipeline.
+      <span class="font-semibold">
+        The problem was never the work — it's that nobody built the layer between the work and
+        the booked job.
+      </span>
+    </p>
+    <div class="mt-8 flex justify-center">
+      <WhatsAppButton message={MESSAGES.problem} label="Get in touch" variant="primary" />
+    </div>
+  </div>
+</Section>
